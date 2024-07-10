@@ -1,4 +1,4 @@
-import java.securtiy.MessageDigest;
+import java.security.MessageDigest;
 
 public class StringUtil {
   // the purpose of this class is to apply SHA-256 to a string and returns at
@@ -23,6 +23,8 @@ public class StringUtil {
         }
         hexString.append(hex);
       }
+
+      return hexString.toString();
 
     } catch (Exception e) {
       throw new RuntimeException(e);
